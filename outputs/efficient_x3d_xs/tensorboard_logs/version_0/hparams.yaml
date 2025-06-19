@@ -1,0 +1,17 @@
+num_classes: 171
+model_name: efficient_x3d_xs
+learning_rate: 0.001
+optimizer: adam
+scheduler: cosine
+pretrained: true
+freeze_backbone: false
+dropout_rate: 0.5
+label_smoothing: 0.1
+weight_decay: 0.0001
+enable_efficient_deployment: true
+efficient_input_size:
+- 1
+- 3
+- 4
+- 160
+- 160
